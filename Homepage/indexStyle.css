@@ -1,0 +1,221 @@
+.body {
+    margin: 0;
+}
+/*IBM logo design*/
+.logo {
+    width: 58px;
+    height: 23px;
+    position: relative;
+    border: 5px solid white;
+    left: 20px;
+    display: inline;
+}
+.logo-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom:10px;
+}
+/*Profile image*/
+.profile {
+    width: 30px;
+    height: 30px;
+    position: absolute; right: 20px; top: 12px;
+    -webkit-filter: opacity(0.35);
+    filter: opacity(0.35);
+}
+/*Button grouping and design for navigation bar*/
+.btn-group {
+    position: absolute; top: 4px; left: 130px;
+    gap: 10px;
+    display: flex;
+    margin-top: 0;
+}
+.button {
+    border: none;
+    background-color: white;
+    padding: 15px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'IBM Plex sans';
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/*Highlights active page on navigation bar*/
+.current {
+    border: 1.5px solid #4589ff;
+    background-color: white;
+    padding: 14px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'IBM Plex sans';
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/*Button hover effects*/
+.current:hover {
+    background-color: #e8e8e8;
+}
+.btn-group .button:hover {
+    background-color: #e8e8e8;
+}
+/*Line designs for separators*/
+.hLine {
+    position: relative; top: 30px;
+    border: 0px;
+    border-top: lightgrey;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.vertical-line {
+    width: 1px;
+    height: 32px;
+    background-color: lightgrey;
+    margin-left: 45px;
+    position: absolute; top: 12px; left: 75px;
+}
+.logo-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+}
+/*Home page design*/
+.home-image {
+    width: 550px;
+    height: auto;
+    margin-top: 50px;
+    padding-left: 80px;
+}
+.logo-title {
+    position: absolute; top: 110px;
+    width: 800px;
+    height: auto;
+    margin-left: 650px;
+}
+/*About section design*/
+.aline {
+    border-top: 1px solid lightgrey;
+    align-items: center;
+    margin: 20px  ;
+    margin-top: 70px;
+}
+.about {
+    font-family: 'IBM Plex sans'; 
+    color: #444; 
+    max-width:800px; 
+    padding: 20px; 
+}
+/* Styling the heading */
+.about h1 {
+    font-size: 70px; 
+    font-weight: normal; 
+    color: #2C72FF; 
+    margin: 80px;
+    margin-left: 40px; 
+}
+/* Styling the paragraphs */
+.about p1 {
+    position: absolute; 
+    right: 150px; 
+    top: 600px;
+    margin: auto;
+    font-size: 22px; 
+    line-height: 1.4; 
+    max-width: 1000px;
+}
+.about p2 {
+    position: absolute; 
+    right: 150px; 
+    top: 860px;
+    margin: auto;
+    font-size: 22px; 
+    line-height: 1.4; 
+    max-width: 1000px;
+}
+/* Styling the list */
+.about ul {
+    position: absolute; 
+    right: 350px; 
+    top: 735px;
+    margin: auto;
+    font-size: 22px; 
+    line-height: 1.4; 
+    max-width: 900px;
+}
+.about ul li {
+    font-size: 22px; 
+    line-height: 1.4; 
+    margin-bottom: 10px; 
+}
+.about ul li strong {
+    color: #000; 
+}
+.aline2 {
+    border-top: 1px solid rgb(205, 204, 204);
+    align-items: center;
+    margin: 20px ;
+    margin-top: 120px;
+}
+.aline3 {
+    border-top: 1px solid rgb(205, 204, 204);
+    align-items: center;
+    margin: 20px;
+    margin-top: -5px;
+}
+/* Styling the how it works section*/
+.how-it-works-para {
+    font-family: 'IBM Plex sans';
+}
+.how-it-works-para h2{
+    position: absolute;
+    font-size: 65px; 
+    font-weight: normal; 
+    color: #2C72FF; 
+    margin: 60px; 
+    top: 1000px;
+}
+.how-it-works-image {
+    width: 1500px;
+    height: auto;
+    margin-top: 150px;
+}
+/*Footer*/
+.footer {
+    background-color: #262626;
+    padding: 20px;
+    margin-top: 80px;
+}
+.footer-content a{
+    color: lightgrey;
+    text-decoration: none;
+    font-family: 'IBM Plex sans';
+    line-height: 3px;
+    margin: 50px;
+}
+/*Socials*/
+.socials {
+    text-align: left;
+}
+.socials-header {
+    color: white;
+    font-family: 'IBM Plex sans'
+}
+/*miscellaneous content*/
+.misc-line{
+    align-items: center;
+    border: 1px solid gray;
+    margin-left: 400px;
+}
+.misc-content{
+    text-align: center;
+}

@@ -1,0 +1,166 @@
+.body {
+    margin: 0;
+}
+/*IBM logo design*/
+.logo {
+    width: 58px;
+    height: 23px;
+    position: relative;
+    border: 5px solid white;
+    left: 20px;
+    display: inline;
+}
+.logo-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom:10px;
+}
+/*Profile image*/
+.profile {
+    width: 30px;
+    height: 30px;
+    position: absolute; right: 20px; top: 12px;
+    -webkit-filter: opacity(0.35);
+    filter: opacity(0.35);
+}
+/*Button grouping and design for navigation bar*/
+.btn-group {
+    position: absolute; top: 4px; left: 130px;
+    gap: 10px;
+    display: flex;
+    margin-top: 0;
+}
+.button {
+    border: none;
+    background-color: white;
+    padding: 15px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'IBM Plex sans';
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/*Highlights active page on navigation bar*/
+.current {
+    border: 1.5px solid #4589ff;
+    background-color: white;
+    padding: 14px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'IBM Plex sans';
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/*Button hover effects*/
+.current:hover {
+    background-color: #e8e8e8;
+}
+.btn-group .button:hover {
+    background-color: #e8e8e8;
+}
+/*Line designs for separators*/
+.hLine {
+    position: relative; top: 30px;
+    border: 0px;
+    border-top: lightgrey;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.vertical-line {
+    width: 1px;
+    height: 32px;
+    background-color: lightgrey;
+    margin-left: 45px;
+    position: absolute; top: 12px; left: 75px;
+}
+.logo-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+}
+.mentorImage {
+    position: absolute; top: 55.5px; right: 0px;
+    width: 850px; 
+}
+.title {
+    position: absolute; top: 120px; left: 70px;
+    width: 550px;
+}
+.subtitle {
+    font-family: 'IBM Plex sans'; 
+    color: #444; 
+    max-width: 800px; 
+    padding: 20px;
+}
+p1 {
+    position: absolute; 
+    left: 80px; 
+    top: 230px;
+    margin: auto;
+    font-size: 18px; 
+    line-height: 1.4; 
+    max-width: 900px;
+}
+.register {
+    position: absolute; top: 360px; left: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4589ff;
+    color: white;
+    font-size: 18px;
+    font-family: 'IBM Plex sans';
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.4;
+    width: 160px;
+}
+.register svg {
+    width: 24px;
+    height: 24px;
+}
+.register:hover {
+    background-color: #0353e9;
+}
+
+/*About section design*/
+.aLine {
+    border-top: 1px solid lightgrey;
+    width: 97%;
+    align-items: center;
+    margin-top: 500px;
+}
+
+h2 {
+    position: absolute; top: 610px; left: 77px;
+    margin-bottom: 60px;
+    font-size: 45px;
+    font-family: 'IBM Plex sans';
+    color: #2C72FF;
+}
+h3 {
+    position: absolute; top: 685px; left: 80px;
+    margin-bottom: 60px;
+    font-size: 22px;
+    font-family: 'IBM Plex sans';
+}
+p2 {
+    position: absolute; top: 750px; left: 80px;
+    font-size: 18px;
+    font-family: 'IBM Plex sans';
+    line-height: 1.6;
+    width: 1350px;
+}
