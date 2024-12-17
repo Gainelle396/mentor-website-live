@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex sans';
+}
+.container {
+    background: white;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px;
+}
