@@ -202,20 +202,45 @@
     line-height: 3px;
     margin: 50px;
 }
+/*IBM logo*/
+.ibm-logo-white {
+    width: 128px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
 /*Socials*/
+.socials-line {
+    align-items: center;
+    border: 0.5px solid gray;
+    margin-left: 400px; 
+}
 .socials {
     text-align: left;
+    margin-left: 1000px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 140%;
 }
 .socials-header {
     color: white;
-    font-family: 'IBM Plex sans'
+    font-family: 'IBM Plex sans';
+    font-weight: bold;
+    margin-left: 50px;
 }
 /*miscellaneous content*/
-.misc-line{
+.misc-line {
     align-items: center;
-    border: 1px solid gray;
+    border: 0.5px solid gray;
     margin-left: 400px;
 }
-.misc-content{
+.misc-content1 {
+    word-spacing: 40px;
+}
+.misc-content1, .misc-content2 {
+    margin-left: 330px;
     text-align: center;
+}
+.footer-content:hover, a:hover {
+    color: white;
 }
