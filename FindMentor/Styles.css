@@ -24,6 +24,7 @@
     position: absolute; right: 20px; top: 12px;
     -webkit-filter: opacity(0.35);
     filter: opacity(0.35);
+    cursor: pointer;
 }
 /*Button grouping and design for navigation bar*/
 .btn-group {
