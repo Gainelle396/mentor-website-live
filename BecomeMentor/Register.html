@@ -27,8 +27,66 @@
     </div>
 
     <!--Form-->
-    <div class = 'name-container'>
-      <lable
-    </div>
+    <form>
+      <!-- Account Information -->
+      <div class="form-container">
+        
+        <div class="email-container">
+          <label for="email">Business email</label>
+          <input type="email" id="email" placeholder="Your email address" required> </br>
+          <small>Your email address will be used to log into IBM Mentor login.</small>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" required>
+          <label for="password">Confirm password</label>
+          <input type="password" id="password" placeholder="Confirm password" required>
+        </div>
+
+        <br>
+
+        <div class="name-container">
+           <label for="first-name">First name</label>
+            <input type="text" id="first-name" placeholder="First name" required>
+          
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" placeholder="Last name" required>
+        </div>
+
+        <br>
+
+        <div class="job-container">
+            <label for="job-role">Job role</label>
+            <input type="text" id="job-role" placeholder="Job role" required>
+          
+            <label for="department">Department</label>
+            <input type="text" id="last-name" placeholder="Department" required>
+        </div>
+
+        <br>
+
+        <div class="years-experience">
+            <label for="experience">Years of Experience</label>
+            <input type="number" id="experience" placeholder="Years of Experience" required>
+        </div>
+
+        <br>
+
+        <div class="description-container">
+            <label for="description">Give a description of your career journey.</label>
+            <br>
+            <textarea id="description" name="description" rows="5" placeholder="Enter a description (max 500 characters)" maxlength="500"></textarea>
+            <small class="descrip-content"> </small>
+            <br>
+            <br>
+            <button type="submit" class="btn">Submit</button>
+        </div>
+        
+      </div>
+
+    </form>
 
 </body>
