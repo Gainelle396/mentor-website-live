@@ -1,5 +1,6 @@
 body {
 }
+
 /*IBM logo design*/
 .logo {
     width: 58px;
@@ -59,20 +60,34 @@ form {
 }
 
 .form-container {
-    margin-top: 35px;
-    margin-left: 34%;
+    background: rgb(231, 231, 231);
+    width: 530px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px, rgba(rgb(235, 234, 234));
 }
 
 input {
-    background-color: #e5e5e5;
-    width: 20%;
+    background-color: #fbfafc;
+    width: 100%;
     font-size: 15px;
 }
-
-input ::placeholder {
-
+input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 label {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button {
+    color:#f4f4f5;
+    border: none;
+    background-color:#2C72FF;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
