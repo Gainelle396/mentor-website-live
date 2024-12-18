@@ -4,9 +4,100 @@
     box-sizing: border-box;
     font-family: 'IBM Plex sans';
 }
+body {
+    background-color: rgb(227, 225, 225);
+}
 .container {
-    background: white;
+    background: rgb(255, 255, 255);
     width: 450px;
     padding: 1.5rem;
-    margin: 50px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px, rgba(rgb(147, 147, 147));
+}
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    font-size: 15px;
+}
+.input-group {
+    padding: 1% 0;
+    position: relative; 
+}
+input:focus {
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 1.5px solid #4589ff;
+}
+input::placeholder {
+    color: transparent;
+}
+label {
+    color: #757575;
+    position: relative;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+input:focus~label, input:not(:placeholder-shown)~label {
+    top: -3em;
+    color: #4589ff;
+    font-size: 15px;
+}
+.recover {
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.recover a {
+    text-decoration: none;
+    color: #4589ff;
+}
+.recover a:hover {
+    color: #236cfe;
+    text-decoration: underline;
+}
+.btn {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color:#4589ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover {
+    background:#236cfe;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+}
+button {
+    color:#4589ff;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    text-decoration: underline;
+    color:#236cfe;
 }
