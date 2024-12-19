@@ -1,48 +1,63 @@
 <?php
-
+session_start();
 include 'connect.php';
 
-if(isset($_POST['signUp'])){
-    $firstName=$_POST['fName'];
-    $lastName=$_POST['lName'];
-    $email=$_POST['email'];
-    $password=$_POST['password'];
-    $password=md5($password);
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //Sign Up
+    if (isset($_POST['signup'])) {
+        $firstName = $conn->real_escape_string($_POST['fName']);
+        $lastName = $conn->real_escape_string($_POST['lName']);
+        $email = $conn->real_escape_string($_POST['email']);
+        $password = $conn->real_escape_string($_POST['password']);
 
-     //Error handling
-     $checkEmail="SELECT * From users where email='$email";
-     $result=$conn->query($checkEmail);
-     if($result->num_rows>0){
-        echo "Email address already taken";
-     }
-     else{
-        $insertQuery="INSERT INTO users(firstName,lastName,email,password)
-                       VALUES ('$firstName','$lastName','$email','$password')";
-            if($conn->query($insertQuery)==TRUE){
-                header("location: portal.php");
+        //Hash password
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        //Check if email already exists
+        $checkEmailQuery = "SELECT * FROM users WHERE email='$email'";
+        $result = $conn->query($checkEmailQuery);
+
+        if ($result->num_rows > 0) {
+            echo "Email address already taken";
+        } else {
+            //Insert new user
+            $insertQuery = "INSERT INTO users (firstName, lastName, email, password)
+                            VALUES ('$firstName', '$lastName', '$email', '$hashedPassword')";
+            if ($conn->query($insertQuery) === TRUE) {
+                //Redirect
+                header("Location: index.html");
+                exit();
+            } else {
+                echo "Error: " . $conn->error;
             }
-            else{
-                echo "Error".$conn->error;
+        }
+    }
+
+    //Login
+    if (isset($_POST['login'])) {
+        $email = $conn->real_escape_string($_POST['email']);
+        $password = $_POST['password'];
+
+        //Check matching email
+        $loginQuery = "SELECT * FROM users WHERE email='$email'";
+        $result = $conn->query($loginQuery);
+
+        if ($result->num_rows > 0) {
+            //Verify password
+            $row = $result->fetch_assoc();
+            if (password_verify($password, $row['password'])) {
+                //Redirect
+                $_SESSION['email'] = $row['email'];
+                header("Location: .//index.html");
+                exit();
+            } else {
+                echo "Incorrect password.";
             }
-     }
+        } else {
+            echo "Email not registered.";
+        }
+    }
 }
 
-if(isset($_POST['login'])){
-    $email=$_POST['email'];
-    $password=$_POSt['password'];
-    $password=md5($password);
-
-    $sql="SELECT * FROM users WHERE email='$email' and password='$password'";
-    $result=$conn->query($sql);
-    if($result->num_rows>0){
-     session_start();
-     $row=$result->fetch_assoc();
-     $_SESSION['email']=$row['email'];
-     header("Location: ../index.html");
-     exit();
-    }
-    else{
-        echo "Not found, incorrect email or password";
-    }
-}
+$conn->close();
 ?>
