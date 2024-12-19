@@ -10,7 +10,7 @@
 <body>
     <div class="container" id="signup" style="display:none;">
         <h1 class="form-title">Register</h1>
-        <form method="post" action="">
+        <form method="post" action="register.php">
             <div class="input-group">
                 <input type="text" name="fName" id="fName" placeholder="First Name" required>
                 <label for="fName">First Name</label>
@@ -37,7 +37,7 @@
 
     <div class="container" id="login">
         <h1 class="form-title">Login</h1>
-        <form method="post" action="">
+        <form method="post" action="register.php">
             <div class="input-group">
                 <input type="email" name="email" id="email" placeholder="Email" required>
                 <label for="email">Email</label>
@@ -46,9 +46,6 @@
                 <input type="password" id="password" placeholder="Password" required>
                 <label for="password">Password</label>
             </div>
-            <p class="recover">
-                <a href="#">Recover Password</a>
-            </p>
           <input type="submit" class="btn" value="Login" name="login"> 
         </form>
         <div class="links">
