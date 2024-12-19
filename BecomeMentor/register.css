@@ -1,4 +1,6 @@
 body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #7ba4f7, #9576f3)
 }
 
 /*IBM logo design*/
@@ -6,7 +8,6 @@ body {
     width: 58px;
     height: 23px;
     position: relative;
-    border: 5px solid white;
     left: 20px;
     display: inline;
 }
@@ -43,15 +44,13 @@ body {
     background-color: lightgrey;
 }
 
-.reg-container h1 {
-    margin: 0;
+.text-gradient h1 {
+    color: linear-gradient(to right, #7ba4f7, #9576f3);
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-top: 30px;
     font-family: IBM Plex sans;
-    font-size: 45px;
-    color: #2C72FF;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -60,7 +59,7 @@ form {
 }
 
 .form-container {
-    background: rgb(231, 231, 231);
+    background: rgb(255, 255, 255);
     width: 530px;
     padding: 1.5rem;
     margin: 50px auto;
@@ -84,10 +83,17 @@ label {
 }
 
 button {
-    color:#f4f4f5;
-    border: none;
-    background-color:#2C72FF;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+    color: #f4f4f5; 
+    border: none; 
+    background-color: #2C72FF; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-left: 40%;
+}
+
+button:hover {
+     background-color: #1A5BCC; /
 }
