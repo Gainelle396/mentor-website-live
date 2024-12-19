@@ -1,6 +1,5 @@
 body {
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #7ba4f7, #9576f3)
+    background-color: #f9f9fa;
 }
 
 /*IBM logo design*/
@@ -45,7 +44,9 @@ body {
 }
 
 .text-gradient h1 {
-    color: linear-gradient(to right, #7ba4f7, #9576f3);
+    background: linear-gradient(to right, #2C72FF, #825AFA); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -64,7 +65,7 @@ form {
     padding: 1.5rem;
     margin: 50px auto;
     border-radius: 10px;
-    box-shadow: 0 20px 35px, rgba(rgb(235, 234, 234));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 input {

@@ -75,6 +75,7 @@ body {
     padding: 0;
     width: 100%;
 }
+
 .vertical-line {
     width: 1px;
     height: 32px;
@@ -208,7 +209,19 @@ body {
     align-items: center;
   }
   
-  .image-placeholder {
+  .image-placeholder1 {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #2C72FF;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+  }
+  .image-placeholder2 {
     width: 80px;
     height: 80px;
     border: 2px solid #2C72FF;
@@ -217,7 +230,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #747474;
+    font-size: 14px;
+    text-align: center;
+  }
+  .image-placeholder3 {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #2C72FF;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
     text-align: center;
   }
