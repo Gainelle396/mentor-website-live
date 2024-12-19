@@ -106,15 +106,15 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    width: 75%; /* Adjust width as needed */
+    width: 75%;
     max-width: 700px;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto; 
     padding: 5px;
-    height: 60px; /* Adjust height */
+    height: 60px; 
     border-radius: 65px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid transparent; /* For inner padding */
+    border: 2px solid transparent; 
     background-clip: padding-box;
 }
 
@@ -136,7 +136,7 @@ body {
     height: 100%;
     border-radius: 65px;
     padding: 10px 20px;
-    background: transparent; /* Transparent since container has the background */
+    background: transparent; /
 }
 
 /* Input field */
@@ -154,4 +154,114 @@ body {
 .search-bar input::placeholder {
     color: #939393;
 }
+
+.card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    width: 850px; 
+    height: 150px;
+    margin-top: 7%;
+    margin-left: 21%;
+    border: 1px solid #e0e0e0;
+    font-family: IBM Plex sans
+  }
+
+  .card2 {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    width: 850px; 
+    height: 150px;
+    margin-top: 4%;
+    margin-left: 21%;
+    border: 1px solid #e0e0e0;
+    font-family: IBM Plex sans
+  }
+  
+  .card3 {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    width: 850px; 
+    height: 150px;
+    margin-top: 4%;
+    margin-left: 21%;
+    border: 1px solid #e0e0e0;
+    font-family: IBM Plex sans
+  }
+  
+  /* Image section */
+  .card-image {
+    flex: 0 0 80px; /* Fixed width for the image area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-placeholder {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #2C72FF;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #747474;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Content section */
+  .card-content {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .full-name {
+    font-size: 21px;
+    color: #2C72FF;
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+  
+  .role {
+    font-size: 15px;
+    color: #4f4e4e;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #777676;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding:15px 15px;
+    margin-top: 10px;
+    width: 108%;
+  }
+  
+  /* Spots left badge */
+  .spots-left {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .spots-left span {
+    background: #2C72FF;
+    border-radius: 15px;
+    padding: 8px 10px;
+    font-size: 13px;
+    color: #e2e2e2;
+  }
 
