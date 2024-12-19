@@ -58,20 +58,6 @@ input:focus~label, input:not(:placeholder-shown)~label {
     color: #4589ff;
     font-size: 15px;
 }
-/*Recover password link*/
-.recover {
-    text-align: right;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-.recover a {
-    text-decoration: none;
-    color: #4589ff;
-}
-.recover a:hover {
-    color: #236cfe;
-    text-decoration: underline;
-}
 /*Login - Sign Up button*/
 .btn {
     font-size: 1.1rem;
